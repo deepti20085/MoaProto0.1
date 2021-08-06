@@ -46,7 +46,7 @@
                     <div class="red-line"></div>
                 
                             <div class="list-item-wrapper">
-                                <div class="list-bullet">1</div>
+                                <div class="list-bullet" id="stp1">1</div>
                                 <div class="list-item">
                                     <div class="list-title">Loading Input</div>
                                 </div>
@@ -114,6 +114,7 @@
             </div>
             <div class="params">
                 <div class="container">
+                   <form action="#" onSubmit="return submit_F()" >
                     <div class="para1 prs">
                         <div class="form-group">
                             <label for="csvfile" class="control-label col-xs-2 lbwrite">Name of the file</label>
@@ -128,13 +129,13 @@
                              <button type="submit" class="btn btn-primary">Download Sample</button>
                            </div>
                         </div>
-                        <span>Successfully Uploaded ..</span>
+                        <!-- <span>Successfully Uploaded ..</span> -->
 
                     </div>
                     <div class="para2 prs">
                         <!-- <div id="carouselExampleControls" class="carousel slide" data-ride="carousel"> --><div class="form-group">
                             <label for="parameters" class="control-label col-xs-2 lbwrite">Parameters</label>
-                        </div>
+                        <!-- </div> -->
                             <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                                 <ol class="carousel-indicators">
                                   <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -197,8 +198,14 @@
                             <span class="sr-only">Next</span>
                           </a>
                     </div>
+                    <div class="btns">
+                        <button type="submit" id="Ok" class="btn btn-primary">SUBMIT</button>
+                        <button type="reset"  id="reset" class="btn btn-primary">RESET</button>
+                        <!-- <button type="s" class="btn btn-primary">Submit</button> -->
+                    </div>
                 </div>
-            </div>
+                   </form>    
+                </div>
         </div>
     </div>
     <script src="assets/bootstrap-5.0.2-dist/bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
